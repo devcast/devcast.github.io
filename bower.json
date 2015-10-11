@@ -1,0 +1,15 @@
+{
+  "name": "devcast.github.io",
+  "version": "0.0.1",
+  "homepage": "https://github.com/devcast/devcast.github.io",
+  "authors": [
+    "\"\""
+  ],
+  "description": "A PodCast about Front End Technologies",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "dependencies": {
+    "primer-css": "~2.3.5"
+  }
+}
