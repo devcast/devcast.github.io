@@ -5,11 +5,23 @@ layout: default
 <section class="post">
     <h2 class="post-title">{{ page.title }}</h2>
 
-    <div class="post-meta">
-        <time datetime="{{ page.date }}">{{ page.date | date: "%B %-d, %Y" }}</time>
-    </div>
+    <ul class="blog-post-meta">
+        <li class="meta-item">
+            <span class="octicon octicon-calendar"></span>
+            <time datetime="{{ page.date }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+        </li>
+        <li class="vcard fn meta-item">
+            <img alt="@mattcantstop" class="author-avatar" height="18" src="https://avatars1.githubusercontent.com/u/4191734?v=3&amp;s=36" width="18"> <a href="/mattcantstop">mattcantstop</a>
+        </li>
+        <li class="meta-item">
+            <span class="octicon octicon-file-directory"></span>
+            <a href="/blog/category/enterprise">EcmaScript6</a>
+        </li>
+    </ul>
 
-    <article class="post-content">
-        {{ content }}
-    </article>
+    <div class="markdown-body">
+        <article class="post-content">
+            {{ content }}
+        </article>
+    </div>
 </section>

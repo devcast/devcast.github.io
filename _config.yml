@@ -1,6 +1,6 @@
-title: DevCastBrasil
+title: "The Official DevCastBrasil Blog"
 email: oi@felquis.com
-description: ""
+description: "The next generation HTML5 hybrid app development SDK"
 
 baseurl: "/"
 url: "http://devcast.github.io"
@@ -18,3 +18,15 @@ sass:
 
 # Build settings
 markdown: kramdown
+
+authors:
+  randsonjs:
+    name: "Randson Oliveira"
+    username: randsonjs
+    avatar: c66919cb194f96c696c1da0c47354a6a
+    email: randsonjs@gmail.com
+  felquis:
+    name: "Felquis Gimenes"
+    username: felquis
+    avatar: c66919cb194f96c696c1da0c47354a6a
+    email: oi@felquis.com

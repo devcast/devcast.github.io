@@ -10,6 +10,7 @@
   "moduleType": [],
   "license": "MIT",
   "dependencies": {
-    "primer-css": "~2.3.5"
+    "primer-css": "~2.3.5",
+    "primer-markdown": "~2.2.2"
   }
 }

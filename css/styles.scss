@@ -3,12 +3,56 @@
 ---
 @charset "utf-8";
 
-// Variables
-@import "variables.scss";
+// Main Files
+@import
+        "variables.scss",
+        "base.scss";
 
 // Vendors
 @import "vendor/primer-css/scss/primer.scss",
+        "vendor/primer-markdown/components/markdown.scss",
+        "vendor/octicons/octicons/octicons.scss",
         "vendor/syntax-highlighting";
 
 // Sections
 @import "sections/header";
+
+.posts {
+    list-style: none;
+
+    .post-list {
+
+        .post-title {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 32px;
+            font-weight: 500;
+        }
+    }
+}
+
+.blog-post-meta {
+    list-style: none;
+    margin-bottom: 20px;
+    color: #999;
+
+    .meta-item {
+        display: inline;
+        padding-right: 20px;
+
+        .author-avatar {
+            vertical-align: top;
+            border-radius: 3px;
+        }
+    }
+}
+
+.post {
+
+    .post-title {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 32px;
+        font-weight: 500;
+    }
+}

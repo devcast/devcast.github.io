@@ -1,5 +1,12 @@
 {% include header.html %}
 
-{{ content }}
+<div class="columns">
+    <div class="three-fourths column">
+        {{ content }}
+    </div>
+    <div class="one-fourth column">
+        {% include navbar.html %}
+    </div>
+</div>
 
 {% include footer.html %}
