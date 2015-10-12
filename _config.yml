@@ -1,4 +1,4 @@
-title: "The Official DevCastBrasil Blog"
+title: "The Official DevCastBrazil Blog"
 email: oi@felquis.com
 description: "The next generation blog about development"
 
@@ -21,12 +21,14 @@ markdown: kramdown
 
 authors:
   randsonjs:
-    name: "Randson Oliveira"
+    name:     Randson Oliveira
     username: randsonjs
-    avatar: c66919cb194f96c696c1da0c47354a6a
-    email: randsonjs@gmail.com
+    url:      https://twitter.com/randsonjs
+    email:    randsonjs@gmail.com
+    avatar:   4191734
   felquis:
-    name: "Felquis Gimenes"
+    name:     Felquis Gimenes
     username: felquis
-    avatar: c66919cb194f96c696c1da0c47354a6a
-    email: oi@felquis.com
+    url:      https://twitter.com/felquis
+    email:    oi@felquis.com
+    avatar:   736728

@@ -1,0 +1,43 @@
+{% include header.html %}
+
+<div class="columns">
+    <div class="three-fourths column">
+        <ul class="posts">
+            {% for post in site.posts %}
+                {% for tag in post.tags %}
+                    {% if tag == page.tag %}
+                        <li class="post-list">
+                            <h2 class="post-title">
+                                <a href="{{ post.url }}">{{ post.title }}</a>
+                            </h2>
+
+                            <ul class="blog-post-meta">
+                                <li class="meta-item">
+                                    <span class="octicon octicon-calendar"></span>
+                                    <time datetime="{{ post.date }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+                                </li>
+                                <li class="vcard fn meta-item">
+                                    <img alt="@{{ site.authors[post.author].username }}" class="author-avatar" height="18" src="https://avatars1.githubusercontent.com/u/4191734?v=3&amp;s=36" width="18">
+                                    <a href="/{{ site.authors[post.author].username }}">{{ site.authors[post.author].username }}</a>
+                                </li>
+                                <li class="meta-item">
+                                    <span class="octicon octicon-file-directory"></span>
+                                    <a href="">{{ tag }}</a>
+                                </li>
+                            </ul>
+
+                            <section class="post-content markdown-body">
+                                {{ post.content | markdownify }}
+                            </section>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="one-fourth column">
+        {% include navbar.html %}
+    </div>
+</div>
+
+{% include footer.html %}

@@ -12,12 +12,12 @@
                 <time datetime="{{ post.date }}">{{ post.date | date: "%B %-d, %Y" }}</time>
             </li>
             <li class="vcard fn meta-item">
-                <img alt="@randsonjs" class="author-avatar" height="18" src="https://avatars1.githubusercontent.com/u/4191734?v=3&amp;s=36" width="18">
-                <a href="/randsonjs">randsonjs</a>
+                <img alt="@{{ site.authors[post.author].username }}" class="author-avatar" height="18" src="https://avatars1.githubusercontent.com/u/{{ site.authors[post.author].avatar }}?v=3&amp;s=36" width="18">
+                <a href="{{ site.authors[post.author].url }}">{{ site.authors[post.author].username }}</a>
             </li>
             <li class="meta-item">
                 <span class="octicon octicon-file-directory"></span>
-                <a href="/blog/category/enterprise">EcmaScript6</a>
+                <a href="/tag/{{ post.tags[0] }}">{{ post.tags[0] }}</a>
             </li>
         </ul>
 

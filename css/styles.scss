@@ -21,6 +21,14 @@
     list-style: none;
 
     .post-list {
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        margin-bottom: 10px;
+
+        &:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
 
         .post-title {
             margin-top: 0;
@@ -50,6 +58,15 @@
 .post {
 
     .post-title {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 32px;
+        font-weight: 500;
+    }
+}
+
+.page {
+    .page-title {
         margin-top: 0;
         margin-bottom: 10px;
         font-size: 32px;

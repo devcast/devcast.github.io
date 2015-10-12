@@ -1,29 +1,30 @@
 <nav class="menu">
     <span class="menu-heading">Main Menu</span>
-    <a class="menu-item selected" href="#">About</a>
-    <a class="menu-item" href="#">PodCasts</a>
-    <a class="menu-item" href="#">Vídeos</a>
+    <a class="menu-item {% if page.title == 'About' %}selected{% endif %}" href="/about/">About</a>
+    <a class="menu-item" href="http://youtube.com/user/DevCastVideos" target="_blank">Vídeos</a>
 </nav>
+{{page.url}}
+{{ site.url }}
 
 <nav class="menu">
     <span class="menu-heading">Categories</span>
-    <a class="menu-item selected" href="#">EcmaScript6</a>
-    <a class="menu-item" href="#">CSS3</a>
-    <a class="menu-item" href="#">HTML5</a>
+
+    {% for tag in site.tags %}
+        <a class="menu-item {% if site.tags[tag[0]] %}selected{% endif %}" href="/tag/{{ tag[0] }}">{{ tag[0] }}</a>
+    {% endfor %}
 </nav>
 
-<nav class="menu">
+<!-- <nav class="menu"> // depois filtrar posts por autor :D
     <span class="menu-heading">Authors</span>
 
-    <!-- {% for author in site.authors %}
-        <a class="menu-item" href="{{ author.username | prepend: site.url }}">{{ author.name }}</a>
-    {% endfor %} -->
-    <a class="menu-item" href="/randsonjs">Randson Oliveira</a>
-    <a class="menu-item selected" href="/felquis">Felquis Gimenes</a>
+    {% for author in site.authors %}
+        <a class="menu-item" href="/{{ author[1].username }}">{{ author[1].name }}</a>
+    {% endfor %}
+</nav> -->
 
-</nav>
-
-<a class="rss" href="/feed/index.xml">
-    <span class="octicon octicon-rss" style="color: orange;"></span>
-    Subscribe
-</a>
+<div class="info-blog">
+    <a class="rss" href="/feed/index.xml">
+        <span class="octicon octicon-rss" style="color: orange;"></span>
+        Subscribe
+    </a>
+</div>
